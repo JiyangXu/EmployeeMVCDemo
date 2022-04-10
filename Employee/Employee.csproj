@@ -6,6 +6,702 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\aspnet\signalr\dist\browser\signalr.js" />
+    <None Remove="Views\aspnet\signalr\dist\browser\signalr.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\browser\signalr.min.js" />
+    <None Remove="Views\aspnet\signalr\dist\browser\signalr.min.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\AbortController.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\AbortController.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\browser-index.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\browser-index.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Errors.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Errors.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HandshakeProtocol.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HandshakeProtocol.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HttpClient.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HttpClient.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HttpConnection.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HttpConnection.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HubConnection.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HubConnection.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HubConnectionBuilder.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\HubConnectionBuilder.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\IConnection.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\IConnection.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\IHttpConnectionOptions.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\IHttpConnectionOptions.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\IHubProtocol.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\IHubProtocol.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\ILogger.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\ILogger.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\index.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\index.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\ITransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\ITransport.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\JsonHubProtocol.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\JsonHubProtocol.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Loggers.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Loggers.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\LongPollingTransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\LongPollingTransport.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\ServerSentEventsTransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\ServerSentEventsTransport.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Stream.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Stream.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\TextMessageFormat.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\TextMessageFormat.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Utils.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\Utils.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\WebSocketTransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\cjs\WebSocketTransport.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\AbortController.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\AbortController.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\AbortController.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\browser-index.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\browser-index.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\browser-index.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Errors.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Errors.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Errors.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HandshakeProtocol.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HandshakeProtocol.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HandshakeProtocol.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HttpClient.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HttpClient.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HttpClient.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HttpConnection.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HttpConnection.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HttpConnection.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HubConnection.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HubConnection.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HubConnection.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HubConnectionBuilder.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HubConnectionBuilder.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\HubConnectionBuilder.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IConnection.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IConnection.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IConnection.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IHttpConnectionOptions.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IHttpConnectionOptions.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IHttpConnectionOptions.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IHubProtocol.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IHubProtocol.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\IHubProtocol.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ILogger.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ILogger.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ILogger.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\index.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\index.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\index.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ITransport.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ITransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ITransport.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\JsonHubProtocol.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\JsonHubProtocol.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\JsonHubProtocol.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Loggers.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Loggers.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Loggers.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\LongPollingTransport.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\LongPollingTransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\LongPollingTransport.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ServerSentEventsTransport.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ServerSentEventsTransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\ServerSentEventsTransport.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Stream.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Stream.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Stream.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\TextMessageFormat.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\TextMessageFormat.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\TextMessageFormat.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Utils.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Utils.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\Utils.js.map" />
+    <None Remove="Views\aspnet\signalr\dist\esm\WebSocketTransport.d.ts" />
+    <None Remove="Views\aspnet\signalr\dist\esm\WebSocketTransport.js" />
+    <None Remove="Views\aspnet\signalr\dist\esm\WebSocketTransport.js.map" />
+    <None Remove="Views\aspnet\signalr\README.md" />
+    <None Remove="Views\aspnet\signalr\src\AbortController.ts" />
+    <None Remove="Views\aspnet\signalr\src\browser-index.ts" />
+    <None Remove="Views\aspnet\signalr\src\Errors.ts" />
+    <None Remove="Views\aspnet\signalr\src\HandshakeProtocol.ts" />
+    <None Remove="Views\aspnet\signalr\src\HttpClient.ts" />
+    <None Remove="Views\aspnet\signalr\src\HttpConnection.ts" />
+    <None Remove="Views\aspnet\signalr\src\HubConnection.ts" />
+    <None Remove="Views\aspnet\signalr\src\HubConnectionBuilder.ts" />
+    <None Remove="Views\aspnet\signalr\src\IConnection.ts" />
+    <None Remove="Views\aspnet\signalr\src\IHttpConnectionOptions.ts" />
+    <None Remove="Views\aspnet\signalr\src\IHubProtocol.ts" />
+    <None Remove="Views\aspnet\signalr\src\ILogger.ts" />
+    <None Remove="Views\aspnet\signalr\src\index.ts" />
+    <None Remove="Views\aspnet\signalr\src\ITransport.ts" />
+    <None Remove="Views\aspnet\signalr\src\JsonHubProtocol.ts" />
+    <None Remove="Views\aspnet\signalr\src\Loggers.ts" />
+    <None Remove="Views\aspnet\signalr\src\LongPollingTransport.ts" />
+    <None Remove="Views\aspnet\signalr\src\ServerSentEventsTransport.ts" />
+    <None Remove="Views\aspnet\signalr\src\Stream.ts" />
+    <None Remove="Views\aspnet\signalr\src\TextMessageFormat.ts" />
+    <None Remove="Views\aspnet\signalr\src\third-party-notices.txt" />
+    <None Remove="Views\aspnet\signalr\src\Utils.ts" />
+    <None Remove="Views\aspnet\signalr\src\WebSocketTransport.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\aspnet\signalr\dist\browser\signalr.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\browser\signalr.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\browser\signalr.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\browser\signalr.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\AbortController.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\AbortController.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\browser-index.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\browser-index.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Errors.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Errors.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HandshakeProtocol.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HandshakeProtocol.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HttpClient.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HttpClient.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HttpConnection.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HttpConnection.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HubConnection.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HubConnection.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HubConnectionBuilder.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\HubConnectionBuilder.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\IConnection.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\IConnection.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\IHttpConnectionOptions.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\IHttpConnectionOptions.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\IHubProtocol.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\IHubProtocol.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\ILogger.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\ILogger.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\index.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\index.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\ITransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\ITransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\JsonHubProtocol.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\JsonHubProtocol.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Loggers.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Loggers.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\LongPollingTransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\LongPollingTransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\ServerSentEventsTransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\ServerSentEventsTransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Stream.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Stream.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\TextMessageFormat.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\TextMessageFormat.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Utils.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\Utils.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\WebSocketTransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\cjs\WebSocketTransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\AbortController.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\AbortController.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\AbortController.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\browser-index.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\browser-index.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\browser-index.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Errors.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Errors.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Errors.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HandshakeProtocol.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HandshakeProtocol.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HandshakeProtocol.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HttpClient.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HttpClient.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HttpClient.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HttpConnection.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HttpConnection.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HttpConnection.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HubConnection.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HubConnection.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HubConnection.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HubConnectionBuilder.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HubConnectionBuilder.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\HubConnectionBuilder.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IConnection.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IConnection.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IConnection.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IHttpConnectionOptions.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IHttpConnectionOptions.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IHttpConnectionOptions.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IHubProtocol.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IHubProtocol.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\IHubProtocol.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ILogger.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ILogger.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ILogger.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\index.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\index.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\index.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ITransport.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ITransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ITransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\JsonHubProtocol.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\JsonHubProtocol.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\JsonHubProtocol.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Loggers.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Loggers.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Loggers.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\LongPollingTransport.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\LongPollingTransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\LongPollingTransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ServerSentEventsTransport.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ServerSentEventsTransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\ServerSentEventsTransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Stream.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Stream.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Stream.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\TextMessageFormat.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\TextMessageFormat.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\TextMessageFormat.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Utils.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Utils.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\Utils.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\WebSocketTransport.d.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\WebSocketTransport.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\dist\esm\WebSocketTransport.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\README.md">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\AbortController.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\browser-index.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\Errors.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\HandshakeProtocol.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\HttpClient.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\HttpConnection.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\HubConnection.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\HubConnectionBuilder.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\IConnection.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\IHttpConnectionOptions.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\IHubProtocol.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\ILogger.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\index.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\ITransport.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\JsonHubProtocol.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\Loggers.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\LongPollingTransport.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\ServerSentEventsTransport.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\Stream.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\TextMessageFormat.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\third-party-notices.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\Utils.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\aspnet\signalr\src\WebSocketTransport.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">

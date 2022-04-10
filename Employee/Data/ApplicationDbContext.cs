@@ -10,5 +10,6 @@ namespace Employee.Data
             
         }
         public DbSet<Models.Employee> Employee { get; set; }
+        public DbSet<Models.Company> Company { get; set; }
     }
 }

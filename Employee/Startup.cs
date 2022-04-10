@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Employee.Data;
+using Employee.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Employee
@@ -29,6 +30,8 @@ namespace Employee
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllersWithViews();
+            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +53,11 @@ namespace Employee
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseEndpoints(config =>
+            {
+                config.MapHub<SignalServer>("/signalServer");
+            });
 
             app.UseEndpoints(endpoints =>
             {
