@@ -435,3 +435,5 @@ C:\Users\xuyan\source\repos\Employee\Employee\obj\Debug\net5.0\Razor\Views\Compa
 C:\Users\xuyan\source\repos\Employee\Employee\bin\Debug\net5.0\package-lock.json
 C:\Users\xuyan\source\repos\Employee\Employee\bin\Debug\net5.0\package.json
 C:\Users\xuyan\source\repos\Employee\Employee\bin\Debug\net5.0\Views\aspnet\signalr\package.json
+C:\Users\xuyan\source\repos\Employee\Employee\obj\Debug\net5.0\Razor\Views\Employee\Edit.cshtml.g.cs
+C:\Users\xuyan\source\repos\Employee\Employee\obj\Debug\net5.0\Razor\Views\Employee\Delete.cshtml.g.cs
